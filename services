@@ -1,0 +1,30 @@
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
+
+export default function Services() {
+  return (
+    <>
+      <NavBar />
+      <main style={styles.main}>
+        <h1>Our Services</h1>
+        <ul>
+          <li>Enterprise Infrastructure</li>
+          <li>Azure & Hybrid Cloud</li>
+          <li>Cybersecurity & Compliance</li>
+          <li>Networking & Cabling</li>
+          <li>CCTV & Surveillance</li>
+          <li>Backup & Disaster Recovery</li>
+        </ul>
+      </main>
+      <Footer />
+    </>
+  );
+}
+
+const styles = {
+  main: {
+    padding: "80px 24px",
+    maxWidth: "800px",
+    margin: "0 auto"
+  }
+};
